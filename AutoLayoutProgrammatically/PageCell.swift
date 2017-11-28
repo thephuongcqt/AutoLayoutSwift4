@@ -16,7 +16,6 @@ class PageCell: UICollectionViewCell {
                 return
             }
             bearImageView.image = UIImage(named: unwrappedPage.imageName)
-//            descriptionTextView.text = unwrappedPage.headerText
             
             let attributedText = NSMutableAttributedString(string: unwrappedPage.headerText, attributes: [NSAttributedStringKey.font: UIFont.boldSystemFont(ofSize: 18)])
             attributedText.append(NSAttributedString(string: "\n\n\n\(unwrappedPage.bodyText)", attributes: [NSAttributedStringKey.font: UIFont.boldSystemFont(ofSize: 13), NSAttributedStringKey.foregroundColor: UIColor.gray]))

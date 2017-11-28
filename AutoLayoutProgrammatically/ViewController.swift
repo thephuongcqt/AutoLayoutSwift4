@@ -57,7 +57,7 @@ class ViewController: UIViewController {
         let pc = UIPageControl()
         pc.currentPage = 0
         pc.numberOfPages = 4
-        pc.currentPageIndicatorTintColor = .red
+        pc.currentPageIndicatorTintColor = .mainPink
         pc.pageIndicatorTintColor = .gray
         return pc
     }()
@@ -110,14 +110,10 @@ class ViewController: UIViewController {
         descriptionTextView.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -25).isActive = true
         descriptionTextView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 0).isActive = true
     }
-    
-
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
 }
 
